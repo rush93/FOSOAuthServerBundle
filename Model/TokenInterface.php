@@ -41,7 +41,7 @@ interface TokenInterface extends IOAuth2Token
     /**
      * @param UserInterface $user
      */
-    public function setUser(User $user);
+    public function setUser(UserInterface $user);
 
     /**
      * @return UserInterface

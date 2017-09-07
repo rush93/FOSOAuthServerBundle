@@ -77,7 +77,7 @@ class AuthCodeManager extends BaseAuthCodeManager
         $queryClass = $this->class.'Query';
 
         return $queryClass::create()
-            ->filterByExpiresAt(time(), \Criteria::LESS_THAN)
+            ->filterByExpiresAt(time(), \Propel\Runtime\ActiveQuery\Criteria::LESS_THAN)
             ->delete();
     }
 }
